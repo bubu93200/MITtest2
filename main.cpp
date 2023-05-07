@@ -72,10 +72,11 @@ int main(int argc, char *argv[])
     QApplication app(argc, argv);
 
     QWidget window;
+    window.setMinimumSize(500, 300);
     window.setWindowTitle("Music Instrument Training (MIT) Test");
 
     // Créer des zones de texte et d'entrée
-    QLabel* textLabel01 = new QLabel("exemple de texte");
+    QLabel* textLabel01 = new QLabel("Copyright (c) Bruno DONATI 2023");
     int myInt = version;
     QString myString = QString::number(myInt); // Qtring pour les chaines de caractere pour Qt
     QLabel* textLabel02 = new QLabel("Version de MuseScore: " + myString);
