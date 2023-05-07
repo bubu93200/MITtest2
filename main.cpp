@@ -17,18 +17,85 @@
 #include <QFile>
 //#include <QVariant>
 #include <Qset>
+#include <QLabel>
+#include <QLineEdit>
+#include <QVBoxLayout>
+
 
 #include <QDebug>
 #include "C:\\MUSESCORE\\MuseScore362GITHUB\\libmscore\\mscore.h"
+//#include "C:\\MUSESCORE\\MuseScore362GITHUB\\libmscore\\score.h"
 
+#include <iostream>
+#include <string>
 
-#include "MITtest2.h"
+#include "MITtest2.h" 
 #include <QtWidgets/QApplication>
 
 int main(int argc, char *argv[])
 {
-    QApplication a(argc, argv);
-    MITtest2 w;
-    w.show();
-    return a.exec();
+
+    // Afficher la version de la librairie Musescore
+    int version = Ms::MSCVERSION;
+
+    //// Créer un objet Score
+    //Ms::Score score;
+    //
+    //// Charger une partition à partir d'un fichier MusicXML
+    //if (!score.load("/chemin/vers/ma/partition.xml"))
+    //{
+    //    std::cerr << "Erreur lors du chargement de la partition" << std::endl;
+    //    return 1;
+    //}
+
+    //// Parcourir les mesures de la partition
+    //for (Ms::Measure* measure : score.measures())
+    //{
+    //    // Parcourir les éléments de chaque mesure
+    //    for (Ms::Element* element : measure->elements())
+    //    {
+    //        // Vérifier si l'élément est une note
+    //        if (element->isNote())
+    //        {
+    //            // Convertir l'élément en note
+    //            Ms::Note* note = static_cast<Ms::Note*>(element);
+
+    //            // Faire quelque chose avec la note
+    //            std::cout << "Note : " << note->pitch() << std::endl;
+    //        }
+    //    }
+    //}
+
+   
+
+    
+    QApplication app(argc, argv);
+
+    QWidget window;
+    window.setWindowTitle("Music Instrument Training (MIT) Test");
+
+    // Créer des zones de texte et d'entrée
+    QLabel* textLabel01 = new QLabel("exemple de texte");
+    int myInt = version;
+    QString myString = QString::number(myInt); // Qtring pour les chaines de caractere pour Qt
+    QLabel* textLabel02 = new QLabel("Version de MuseScore: " + myString);
+    QLineEdit* lineEdit = new QLineEdit();
+
+    // Ajouter les zones de texte et d'entrée à la fenêtre
+    QVBoxLayout* layout = new QVBoxLayout(&window);
+    layout->addWidget(textLabel01);
+    layout->addWidget(textLabel02);
+    layout->addWidget(lineEdit);
+
+    // Afficher la fenêtre
+    window.show();
+
+    // Exécuter l'application
+    return app.exec();
+
+    ////////////////////////////////////////////
+    // Permet d'utiliser la fenetre ui qui permet une programmation graphique
+   //MITtest2 w;
+    //w.show();
+    //return a.exec();
 }
