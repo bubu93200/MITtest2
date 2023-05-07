@@ -4,7 +4,7 @@
 //
 // Copyright(c) Bruno Donati
 //
-// Version 0.00
+// Version 0.01 : Affiche la version de l'API MuseScore
 ///////////////////////////////////////////////////////////
 
 #include <QtCore>
