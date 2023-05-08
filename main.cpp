@@ -15,19 +15,25 @@
 #include <QtGlobal>
 #include <QComboBox>
 #include <QFile>
-//#include <QVariant>
+#include <QVariant>
 #include <Qset>
 #include <QLabel>
 #include <QLineEdit>
 #include <QVBoxLayout>
-
+#include <QPainter>
+#include <QPainterPath>
 
 #include <QDebug>
-#include "C:\\MUSESCORE\\MuseScore362GITHUB\\libmscore\\mscore.h"
-//#include "C:\\MUSESCORE\\MuseScore362GITHUB\\libmscore\\score.h"
 
 #include <iostream>
 #include <string>
+#include <array>
+#include<set>
+
+#include "C:\\MUSESCORE\\MuseScore362GITHUB\\libmscore\\mscore.h"
+#include "C:\\MUSESCORE\\MuseScore362GITHUB\\libmscore\\score.h"
+
+
 
 #include "MITtest2.h" 
 #include <QtWidgets/QApplication>
