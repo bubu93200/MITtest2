@@ -32,6 +32,7 @@
 #include "MITtest2.h" 
 #include <QtWidgets/QApplication>
 
+
 int main(int argc, char *argv[])
 {
 
@@ -75,8 +76,14 @@ int main(int argc, char *argv[])
     window.setMinimumSize(500, 300);
     window.setWindowTitle("Music Instrument Training (MIT) Test");
 
+    // Définiton de symboles
+    const QString ALPHA = QChar(0x03B1); // unused
+    const QString THETA = QChar(0x03B8); // unused
+    const QString COPYRIGHT = QChar(0x00A9);
+   
+
     // Créer des zones de texte et d'entrée
-    QLabel* textLabel01 = new QLabel("Copyright (c) Bruno DONATI 2023");
+    QLabel* textLabel01 = new QLabel("Copyright " + COPYRIGHT + " Bruno DONATI 2023");
     int myInt = version;
     QString myString = QString::number(myInt); // Qtring pour les chaines de caractere pour Qt
     QLabel* textLabel02 = new QLabel("Version de MuseScore: " + myString);
