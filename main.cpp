@@ -4,7 +4,8 @@
 //
 // Copyright(c) Bruno Donati
 //
-// Version 0.01 : Affiche la version de l'API MuseScore
+// Version 0.02 :   Affiche la version de l'API MuseScore
+//                  Plus aucune erreur dans libmscore. Tous les include et librairies Qt sont correctes
 ///////////////////////////////////////////////////////////
 
 #include <QtCore>
