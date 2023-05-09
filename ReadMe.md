@@ -81,6 +81,9 @@ C:\MUSESCORE\MuseScore362GITHUB\thirdparty\freetype\include
 C:\MUSESCORE\MuseScore362GITHUB\thirdparty\dtl  
 C:\MUSESCORE\MuseScore362GITHUB\global  
 %(AdditionalIncludeDirectories)  
+#### Génération de code
+##### Bibliothèque Runtime
+Mettre Multithread /MT
 
 ### Editeur de liens
 #### Général

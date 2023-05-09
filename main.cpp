@@ -5,7 +5,7 @@
 // Copyright(c) Bruno Donati
 //
 // Version 0.02 :   Affiche la version de l'API MuseScore
-//                  Plus aucune erreur dans libmscore. Tous les include et librairies Qt sont correctes
+//                  Plus aucune erreur dans libmscore. Tous les include et librairies Qt sont corrects
 ///////////////////////////////////////////////////////////
 
 #include <QtCore>
@@ -45,7 +45,8 @@ int main(int argc, char *argv[])
 
     // Afficher la version de la librairie Musescore
     int version = Ms::MSCVERSION;
-
+    //Ms::Score score;
+    Ms::Score score{};
     //// Créer un objet Score
     //Ms::Score score;
     //
