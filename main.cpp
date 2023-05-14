@@ -32,7 +32,7 @@
 #include<set>
 
 #include "C:\\MUSESCORE\\MuseScore362GITHUB\\libmscore\\mscore.h"
-#include "C:\\MUSESCORE\\MuseScore362GITHUB\\libmscore\\score.h"
+//#include "C:\\MUSESCORE\\MuseScore362GITHUB\\libmscore\\score.h"
 
 
 
@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
     // Afficher la version de la librairie Musescore
     int version = Ms::MSCVERSION;
     //Ms::Score score;
-    Ms::Score score{};
+    //Ms::Score score{};
     //// Créer un objet Score
     //Ms::Score score;
     //
