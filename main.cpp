@@ -10,29 +10,54 @@
 
 #include <QtCore>
 #include <QGuiApplication>
+#include <QWidget>
 //#include <QQmlApplicationEngine>
-#include <QtGlobal>
 //#include <QApplication>
 #include <QtGlobal>
 #include <QComboBox>
 #include <QFile>
 #include <QVariant>
 #include <Qset>
+#include <QString>
 #include <QLabel>
 #include <QLineEdit>
 #include <QVBoxLayout>
 #include <QPainter>
 #include <QPainterPath>
-
+#include <QPrinter>
 #include <QDebug>
+#include <QMainWindow>
+#include <QFileDialog>
+#include <QAction>
+#include <QNetworkReply>
+#include <QSplitter>
+#include <QProgressBar>
+#include <QHelpEngine>
+#include <QMessageBox>
+#include <QString>
+#include <QVector>
+#include <QSvgRenderer>
+#include <QByteArray>
+#include <QImage>
+#include <QMetaType>
+#include <QStyleFactory>
+#include <QStandardPaths>
+#include <QDir>
 
 #include <iostream>
 #include <string>
 #include <array>
-#include<set>
+#include <set>
+#include <vector>
+#include <deque>
 
+
+
+#include "C:\\MUSESCORE\\MuseScore362GITHUB\\mscore\\musescore.h"
+//#include "C:\\MUSESCORE\\MuseScore362GITHUB\\libmscore\\image.h"
 #include "C:\\MUSESCORE\\MuseScore362GITHUB\\libmscore\\mscore.h"
 //#include "C:\\MUSESCORE\\MuseScore362GITHUB\\libmscore\\score.h"
+
 
 
 
@@ -45,6 +70,8 @@ int main(int argc, char *argv[])
 
     // Afficher la version de la librairie Musescore
     int version = Ms::MSCVERSION;
+
+    auto style = Ms::MScore::readDefaultStyle("essai");
     //Ms::Score score;
     //Ms::Score score{};
     //// Créer un objet Score

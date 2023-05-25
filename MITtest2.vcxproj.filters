@@ -49,4 +49,10 @@
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Library Include="libmscore.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="scorefile.obj" />
+  </ItemGroup>
 </Project>
